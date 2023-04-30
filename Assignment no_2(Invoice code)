@@ -1,0 +1,23 @@
+# Define the prices of the books
+book1_price = 499.00
+book2_price = 855.00
+book3_price = 645.00
+
+#Delivery charge cost is for all the threebooks but not fro the individual book Define the taxes and additional charges
+gst_rate = 0.12
+delivery_charge = 250.00
+
+# Calculate the subtotal
+subtotal = book1_price + book2_price + book3_price
+
+# Calculate the GST,as gst is same for each book
+gst_amount = gst_rate * subtotal
+
+# Calculate the total amount including GST
+total_before_delivery = subtotal + gst_amount
+
+# Add the delivery charge
+total = total_before_delivery + delivery_charge
+
+# Display the total amount
+print(f"Total amount: Rs.{total:.2f}")
