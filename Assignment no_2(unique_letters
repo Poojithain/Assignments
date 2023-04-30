@@ -1,0 +1,15 @@
+string1 = "dedication"
+
+# Create an empty set to store unique letters
+unique_letters = set()
+
+# Loop through each character in the string
+for char in string1:
+
+    # If the character is not already in the set, add it
+    if char not in unique_letters:
+        unique_letters.add(char)
+
+# Print the number of unique letters and the list of unique letters
+print("Number of unique letters:",end="")
+print(unique_letters)
