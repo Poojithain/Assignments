@@ -20,4 +20,5 @@ total_before_delivery = subtotal + gst_amount
 total = total_before_delivery + delivery_charge
 
 # Display the total amount
-print(f"Total amount: Rs.{total:.2f}")
+print("Invoice amount:",end="")
+print(total)
